@@ -1,0 +1,127 @@
+Resumo
+
+Foi implementado o problema de localização de hubs e gateways para formular o sistema de transporte aéreo. Com 3 níveis de estrutura de rede e tendo nós localizado em regiões diferentes, com a função de localizar gateways e hubs domésticos, fazendo as conexões minimizando os custos. Considerou que só poderia sair ou entrar em uma região por meio de um gateway e os fluxos locais somente por meio de hubs. Foi criada duas variações de algoritimos baseado no método de decomposição de Benders para resolver o problema. Foi realizado algumas otimizações para solucianar problemas de larga escala em um tempo razoável.
+
+1. Introdução
+
+No ano ano de 2034 é esperado 7 bilhões de passageiros anuais, o dobro de 2015. É necessário fazer melhorias na rede atual para suportar a carga. Existem diferenças entre passageiros locais e internacionais que podem ser explicadas.
+Passageiros internacionais precisam de mais conforto porque chegam antes no aeroporto e gasta mais tempo nos terminais.
+É necessários os hubs para chegar nos gateways, eles são interligados.
+Os três níveis de conexão: gateway - gateway, hub-hub e aeroporto regional-hub/gateway.
+Fala dos problemas co gateways que começaram a ser analisados somente recentemente.
+Importância de diferenciar os fluxos globais dos locais.
+Subproblema de Benders para realizar aluns cortes para resolver o problema mais rápido.
+Modelo não mostra a realidade e sim como deveria ser modelada a malha aérea.
+Objetivo do estudo: propor um formulação entre os fluxos locais e globais em uma estrutura hub e spoke e criar um algoritimo capaz de resolver instâncias de larga escala em um tempo razoável.
+
+2. Notações, definições e fórmulas
+
+Transporte mínimo com custos fixos.
+Fluxos locais não são obrigados a passar por hubs.
+Fluxos entre regiões diferentes precisam passar por dois gateways, na saida e chegada.(cada região tem que ter um gateway)
+Aeroportos locais podem ser conectados a mais de um hub.
+Separado em 3 camadas: Todos os aeroportos, candidatos a hub e candidatos a gateways.(fig. 1)
+R ={1,2,3} (número de regiões) L = {1,..., 6} (Locais) H = (7,...,12} (Hubs) G = {13,...,18} (Gateways)
+Gateways podem ser conectados na mesma região.
+Monta os arcos dos aeroportos locais aos candidatos a hubs e dos hubs com os gateways com índice da região.
+A demanda vai ser o conjunto das demandas do dois pontos conectados formando um fluxo.
+Custo não pode ser negativo. (c é o custo unitário do transporte) 
+Parâmetros b ^ H e b ^ G são os custos de manuseio de bagagem e verificação de imigração.
+q - custos fixos entre inter-hub ou inter-gateway
+y - 0 ou 1 se tiver um hub ou gateway instalado.
+f - porcentagem de fluxo baseado na demanda (w) entre arcos.
+
+Fórmulas
+(1) Minimizar o custo dos tranportes e instalações de hubs gateways
+(2) Equação de equilíbrio. Fluxo = 1
+(3) Equação de equilíbrio. - Fluxo + Fluxo = 0
+(4) Equação de equilíbrio. - Fluxo = -1
+(5) Garante que só tenha fluxo se a rota estiver ativa.
+(6) Só pode ter fluxo se hub ou gateway estiver ativo.
+(7) Garante que os gateways estejam sempre conectados.
+(8) (9) Definir como binário.
+(10) Fluxo não pode ser negativo.
+
+Decompondo os problemas em forma de escada em subproblemas mais curtos.
+
+3. Algorítimos de decomposição de Benders
+
+Problemas lineares inteiros mistos com formato de matriz.
+Separa em problema mestre e subproblema.
+O problema mestre possui variáveis inteiras e as restrições. As variáveis são substituidas pour uma auxiliar para subestimar a função objetivo e realizar os cortes de Benders.
+E o subproblema é o problema temporariamente fixado pelo problema mestre.
+O algoritimo interage resolvendo o problema mestre e depois o subproblema. Os cortes de benders são separados do subproblema e adicionados no problema mestre.
+Limite inferior vai ser o problema mestre. Limite superior vai ser o subproblema.
+
+3.1. Subproblema e problema mestre
+
+Parametrizou as variáveis e encontrou o subproblema primário. (11) - (17)
+Para identificar se o subproblema primário é viável (18) - (22)
+Afirmação 1. É viável e limitado se tiver pelo menos 1 gateway por região e se tiver um hub associado definido.
+Com auxilio da variável auxiliar η (função objetivo, normalmente a minimização dos custos de transporte) ≥ 0 pode reformular o problema mestre.(23) - (27)
+(24) cortes de otimização de Benders
+Equações para ajudar na resolução (29) - (33)
+(29) e (30) garante conexão inter-hub ou inter-gateway somete se for confirmado se eles são hub ou gateway
+(31)-(33) Todo gateway tem que ser conectado a outro gateway
+Agora temos uma equação menor do que a original tendo apenas as variáveis inteiras y e x, e uma variável contínua η.
+
+3.2. Esboço de algoritimo de decomposição de benders básico
+
+Alg-1-v1 é a resolução e Alg-1-v2 verifica se ela é viável. (algoritmo 1)
+
+3.3 Adicionando cortes ótimos de pareto
+
+É realizado alumas outras mudanças para acelerar o código e assim como o algoritmo 1 Alg-1-v1 é a resolução e Alg-1-v2 verifica se ela é viável. (algoritmo 2)
+
+3.4. Adicionando cortes de Benders
+
+Mais redução.
+
+3.5 Resolvendo o Subproblema de benders
+
+É definido uma variável para menor distância entre os pontos e é considerado incialmente que todos hubs e gateways e suas conexões estão ativas.
+
+(41)-(46) garantem que a equação seja viável
+
+Para garantir que a solução ótima para um percurso seja o caminho mais curto.
+
+3.6 Reparando soluções primárias inviáveis
+
+
+4. Exprimentos comutacionais
+
+141 cidades foram selecionadas com latitude, longitude, população e produto interno bruto.
+
+Fórmula da demanda. (47)
+
+População dividida por 100.000
+
+Tabela 1 - calcula primeiro as cidades mais populosas, realizando testes.
+
+Tabela 2 - Custo fixo de instalação de hub ou gateway não diferem entre si.
+           Os arcos variam o custo dependendo da distância.
+           Aplica essas variações para saber como o programa vai gerar o resultado mudando os custos.  
+
+Tabela 3 até 12 - Mostram alguns resultados com diferentes configurações.
+                  Número de interações / tempo total / GAP(para indicar quando uma solução ótima não for encontrada)
+                  Quanto maior o custo fixo mais demanda de computador.
+                  Quando os custos fixos são mais altos, a influência dos custos de transporte diminui.
+
+5. Compreensão do estudo
+
+5.1 Influência da economia de escala
+
+Tabelas (13)-(14)
+
+Alfa influencia nos custos operacionais alfândega, imigração e verificação de seguranças
+
+Parâmetros b ^ H e b ^ G são os custos de manuseio de bagagem e verificação de imigração.
+
+PMDA 
+
+
+6. Conclusão
+
+Voos diretos podem ser bem mais atrativos. Mas manter uma rede com as três camadas de arcos em uma boa estrutura vai gerar um valor econômico muito melhor.
+Evita uma sobrecarga muito grande também em determinados aeroportos.
+Que não seria vantajoso operar com as 3 camadas quando se tem uma infra estrutura ruim
