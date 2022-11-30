@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ae4172d031a4e2182885b99201bcdba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2ae4172d031a4e2182885b99201bcdba" ></div>
+        
+</body>
+<script>    
+    
+            var map_2ae4172d031a4e2182885b99201bcdba = L.map(
+                "map_2ae4172d031a4e2182885b99201bcdba",
+                {
+                    center: [-15.77972, -47.92972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5fa01acf7542490396bddc1ff8142407 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var poly_line_d87a9f85f0614275a4243908dbbdc237 = L.polyline(
+                [[-16.440926, -39.0821227], [-18.8896085, -48.2329403]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var poly_line_99b91ab23a7840e4be2fc34c09456b49 = L.polyline(
+                [[-16.6323026, -49.2185338], [-18.8896085, -48.2329403]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var poly_line_034922b9e1be43b2855e77f9030fe27f = L.polyline(
+                [[-16.6323026, -49.2185338], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var poly_line_c156e6206c53422ba29a61e8aba4ab73 = L.polyline(
+                [[-16.6323026, -49.2185338], [-10.2956593, -48.360297]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var poly_line_7c04dd598e6e4253862b11947c9e712e = L.polyline(
+                [[-18.8896085, -48.2329403], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var poly_line_ce626356a1ce4393b2af476563478b83 = L.polyline(
+                [[-23.4797333, -52.0143945], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            var regular_polygon_marker_4b8a9178109040508ad07cc41df7b563 = new L.RegularPolygonMarker(
+                [-16.440926, -39.0821227],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_4b8a9178109040508ad07cc41df7b563.bindTooltip(
+                `<div>
+                     PORTO SEGURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_6c342e2c8c034e41a890498455104b53 = new L.RegularPolygonMarker(
+                [-16.6323026, -49.2185338],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_6c342e2c8c034e41a890498455104b53.bindTooltip(
+                `<div>
+                     SANTA GENOVEVA/GOIÂNIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_457143e1fc6749c0ab961d3d9cbbd157 = new L.RegularPolygonMarker(
+                [-18.8896085, -48.2329403],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_457143e1fc6749c0ab961d3d9cbbd157.bindTooltip(
+                `<div>
+                     TEN CEL AVIADOR CÉSAR BOMBONATO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_98b3d747986440f2bc634e826b427bf8 = new L.RegularPolygonMarker(
+                [-23.4797333, -52.0143945],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_98b3d747986440f2bc634e826b427bf8.bindTooltip(
+                `<div>
+                     SÍLVIO NAME JÚNIOR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_68d2970b8bb9438bbf986421c2860370 = new L.RegularPolygonMarker(
+                [-20.8123833, -49.4070988],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_68d2970b8bb9438bbf986421c2860370.bindTooltip(
+                `<div>
+                     PROFESSOR ERIBERTO MANOEL REINO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4f44ee8a808740f899c77d6bc62c4a25 = new L.RegularPolygonMarker(
+                [-10.2956593, -48.360297],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_4f44ee8a808740f899c77d6bc62c4a25.bindTooltip(
+                `<div>
+                     BRIGADEIRO LYSIAS RODRIGUES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_2b84fd167b524cee83130355d00b03f7 = new L.RegularPolygonMarker(
+                [-16.440926, -39.0821227],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_2b84fd167b524cee83130355d00b03f7.bindTooltip(
+                `<div>
+                     PORTO SEGURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_cb5d7dcff082442592c334d50d74f807 = new L.RegularPolygonMarker(
+                [-16.6323026, -49.2185338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_cb5d7dcff082442592c334d50d74f807.bindTooltip(
+                `<div>
+                     SANTA GENOVEVA/GOIÂNIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_eebaca4bd1d248d492ff31889d85e68a = new L.RegularPolygonMarker(
+                [-18.8896085, -48.2329403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_eebaca4bd1d248d492ff31889d85e68a.bindTooltip(
+                `<div>
+                     TEN CEL AVIADOR CÉSAR BOMBONATO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4a6b60db28bf48709f4c723692ba3fcb = new L.RegularPolygonMarker(
+                [-23.4797333, -52.0143945],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_4a6b60db28bf48709f4c723692ba3fcb.bindTooltip(
+                `<div>
+                     SÍLVIO NAME JÚNIOR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_a58f6fd8d437433f8344f4a4a51a16e7 = new L.RegularPolygonMarker(
+                [-20.8123833, -49.4070988],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_a58f6fd8d437433f8344f4a4a51a16e7.bindTooltip(
+                `<div>
+                     PROFESSOR ERIBERTO MANOEL REINO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_9594c868f2094d1f90a05aedbb6e8da7 = new L.RegularPolygonMarker(
+                [-10.2956593, -48.360297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_2ae4172d031a4e2182885b99201bcdba);
+        
+    
+            regular_polygon_marker_9594c868f2094d1f90a05aedbb6e8da7.bindTooltip(
+                `<div>
+                     BRIGADEIRO LYSIAS RODRIGUES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

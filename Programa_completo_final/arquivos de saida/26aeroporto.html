@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4eb2ae60c57c43a69354463070a5e226 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4eb2ae60c57c43a69354463070a5e226" ></div>
+        
+</body>
+<script>    
+    
+            var map_4eb2ae60c57c43a69354463070a5e226 = L.map(
+                "map_4eb2ae60c57c43a69354463070a5e226",
+                {
+                    center: [-15.77972, -47.92972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_91133f486ed749e590c7a694f2bc2626 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_b623f9270b6a4892891dfbf95d1be118 = L.polyline(
+                [[-16.6323026, -49.2185338], [-20.4686937, -54.676312]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_479137d86c094eeda26272a74406dc12 = L.polyline(
+                [[-19.634099, -43.9675847], [-18.8896085, -48.2329403]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_0137d0668f6f487fa333783e3d81ecfc = L.polyline(
+                [[-19.634099, -43.9675847], [-21.1391642, -47.7787595]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_5e5e84625d97493a81f5b58513491864 = L.polyline(
+                [[-19.634099, -43.9675847], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_f878d93b7970447ca118f942b2aa6002 = L.polyline(
+                [[-19.634099, -43.9675847], [-23.008205, -47.1397572]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_d60caaa437ab4207b47f1c6b3578df59 = L.polyline(
+                [[-18.8896085, -48.2329403], [-21.1391642, -47.7787595]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_d1750da26b5146b891a4b2a0dee4ec1d = L.polyline(
+                [[-18.8896085, -48.2329403], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_7f14e14fe65d4afebcb6334f8774fc3e = L.polyline(
+                [[-18.8896085, -48.2329403], [-23.008205, -47.1397572]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_df9e6cfb97e94ed0aba81eeeed8feb71 = L.polyline(
+                [[-25.5327132, -49.1746698], [-25.5977089, -54.4907019]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_4d441c9277cb438caf05d59f59cb6b09 = L.polyline(
+                [[-25.5327132, -49.1746698], [-23.3285795, -51.1401779]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_7c3e71418d164f1e89f98a3e2f0aaa7e = L.polyline(
+                [[-25.5327132, -49.1746698], [-23.4797333, -52.0143945]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_9a72bc51567545afb9500cb5e0b236a0 = L.polyline(
+                [[-25.5327132, -49.1746698], [-29.7083568, -53.7026926]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_62145389ae7b49e29bcbf7e574538680 = L.polyline(
+                [[-25.5977089, -54.4907019], [-23.3285795, -51.1401779]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_9dd9278e768343fd8045b8b9342ac0af = L.polyline(
+                [[-25.5977089, -54.4907019], [-23.4797333, -52.0143945]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_87b2716c30ec463e800a68941af2a21e = L.polyline(
+                [[-25.5977089, -54.4907019], [-29.7083568, -53.7026926]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_b810a8f990174c46b5f2f7ea275833fd = L.polyline(
+                [[-23.3285795, -51.1401779], [-23.4797333, -52.0143945]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_55a3da24e9834bba9b4ca3b5cfd112e5 = L.polyline(
+                [[-23.3285795, -51.1401779], [-29.7083568, -53.7026926]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_e4a70736be6a41e2bf3041968d668eaf = L.polyline(
+                [[-23.4797333, -52.0143945], [-29.7083568, -53.7026926]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_acf960bbf6b9469ebd75ca110bd67445 = L.polyline(
+                [[-21.1391642, -47.7787595], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_5a760c4f414549cd82a51fe0e49e5b6a = L.polyline(
+                [[-21.1391642, -47.7787595], [-23.008205, -47.1397572]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_cdedca2424ca4cc195e3e4846fccc826 = L.polyline(
+                [[-20.8123833, -49.4070988], [-23.008205, -47.1397572]],
+                {"bubblingMouseEvents": true, "color": "#008000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_9439ac81a643411782d3fca465c3ed27 = L.polyline(
+                [[-16.440926, -39.0821227], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_c198a1a0f86f462c8de0a5a60d70a905 = L.polyline(
+                [[-16.6323026, -49.2185338], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_86cd0bcafebd40beae57f41522d5ffbc = L.polyline(
+                [[-16.6323026, -49.2185338], [-10.2956593, -48.360297]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var poly_line_d4a67fef905a43058680352d1a0b8d87 = L.polyline(
+                [[-23.3285795, -51.1401779], [-20.8123833, -49.4070988]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ff0000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            var regular_polygon_marker_34a227497e224c44b5a6920ceec8f94f = new L.RegularPolygonMarker(
+                [-16.440926, -39.0821227],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_34a227497e224c44b5a6920ceec8f94f.bindTooltip(
+                `<div>
+                     PORTO SEGURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_0fa2bfcc6c9d4ce586a0928f8ea23bba = new L.RegularPolygonMarker(
+                [-16.6323026, -49.2185338],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_0fa2bfcc6c9d4ce586a0928f8ea23bba.bindTooltip(
+                `<div>
+                     SANTA GENOVEVA/GOIÂNIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_cf24027140aa4ca0839a6990820959c8 = new L.RegularPolygonMarker(
+                [-19.634099, -43.9675847],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_cf24027140aa4ca0839a6990820959c8.bindTooltip(
+                `<div>
+                     TANCREDO NEVES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_68f8c6528d204c1ab231356712fd5c61 = new L.RegularPolygonMarker(
+                [-18.8896085, -48.2329403],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_68f8c6528d204c1ab231356712fd5c61.bindTooltip(
+                `<div>
+                     TEN CEL AVIADOR CÉSAR BOMBONATO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_27a6f6cf57244fdf876446f49aa23727 = new L.RegularPolygonMarker(
+                [-20.4686937, -54.676312],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_27a6f6cf57244fdf876446f49aa23727.bindTooltip(
+                `<div>
+                     CAMPO GRANDE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_8b1b0cbc973c464180cb470161d92a6b = new L.RegularPolygonMarker(
+                [-25.5327132, -49.1746698],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_8b1b0cbc973c464180cb470161d92a6b.bindTooltip(
+                `<div>
+                     AFONSO PENA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4ed598511a814706a8e331f2a72fb205 = new L.RegularPolygonMarker(
+                [-25.5977089, -54.4907019],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_4ed598511a814706a8e331f2a72fb205.bindTooltip(
+                `<div>
+                     CATARATAS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_77783ccb123f4ccd863678d03941e389 = new L.RegularPolygonMarker(
+                [-23.3285795, -51.1401779],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_77783ccb123f4ccd863678d03941e389.bindTooltip(
+                `<div>
+                     GOVERNADOR JOSÉ RICHA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_2d00c998e5dd4405b587373c27575d04 = new L.RegularPolygonMarker(
+                [-23.4797333, -52.0143945],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_2d00c998e5dd4405b587373c27575d04.bindTooltip(
+                `<div>
+                     SÍLVIO NAME JÚNIOR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_dfc37fea449f4ff5ae7836fdf715a194 = new L.RegularPolygonMarker(
+                [-29.7083568, -53.7026926],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_dfc37fea449f4ff5ae7836fdf715a194.bindTooltip(
+                `<div>
+                     SANTA MARIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_601954699e0548938d8ff7cbb71883e0 = new L.RegularPolygonMarker(
+                [-21.1391642, -47.7787595],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_601954699e0548938d8ff7cbb71883e0.bindTooltip(
+                `<div>
+                     LEITE LOPES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_6d9c2492822f4496ba200bb7a5f5a12b = new L.RegularPolygonMarker(
+                [-20.8123833, -49.4070988],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_6d9c2492822f4496ba200bb7a5f5a12b.bindTooltip(
+                `<div>
+                     PROFESSOR ERIBERTO MANOEL REINO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_62f02f7fae9842ac9ec287257a7710a6 = new L.RegularPolygonMarker(
+                [-23.008205, -47.1397572],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_62f02f7fae9842ac9ec287257a7710a6.bindTooltip(
+                `<div>
+                     VIRACOPOS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_fdaede5b32f84ef2bc4b25c934cdd066 = new L.RegularPolygonMarker(
+                [-10.2956593, -48.360297],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 6, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_fdaede5b32f84ef2bc4b25c934cdd066.bindTooltip(
+                `<div>
+                     BRIGADEIRO LYSIAS RODRIGUES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_92d7f0f6b0cc42578f01db7159d46a2d = new L.RegularPolygonMarker(
+                [-16.440926, -39.0821227],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_92d7f0f6b0cc42578f01db7159d46a2d.bindTooltip(
+                `<div>
+                     PORTO SEGURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_5e0b035b29614fcb86efbf6ab4551f57 = new L.RegularPolygonMarker(
+                [-16.6323026, -49.2185338],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_5e0b035b29614fcb86efbf6ab4551f57.bindTooltip(
+                `<div>
+                     SANTA GENOVEVA/GOIÂNIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_935623bc38434779b422186136eb33b1 = new L.RegularPolygonMarker(
+                [-23.3285795, -51.1401779],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_935623bc38434779b422186136eb33b1.bindTooltip(
+                `<div>
+                     GOVERNADOR JOSÉ RICHA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_9c443cd6cf794339a84be941a9d2cd51 = new L.RegularPolygonMarker(
+                [-20.8123833, -49.4070988],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_9c443cd6cf794339a84be941a9d2cd51.bindTooltip(
+                `<div>
+                     PROFESSOR ERIBERTO MANOEL REINO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_f7932e602f7f4915947a55c6b3e42364 = new L.RegularPolygonMarker(
+                [-10.2956593, -48.360297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 25, "opacity": 1.0, "radius": 5, "rotation": 0, "stroke": true, "weight": 3}
+            ).addTo(map_4eb2ae60c57c43a69354463070a5e226);
+        
+    
+            regular_polygon_marker_f7932e602f7f4915947a55c6b3e42364.bindTooltip(
+                `<div>
+                     BRIGADEIRO LYSIAS RODRIGUES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
